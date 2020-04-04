@@ -12,14 +12,33 @@ private:
     string nome;
     int velMax;
     bool ligado;
+    void setVelMax(int vm);
 public:
     unsigned int vel;
     unsigned int tipo;
-
     Veiculo(int tp);
     int getVelMax();
-    void setVelMax(int vm);
+    bool getLigado();
+    void setLigado(int l);
 };
+
+bool Veiculo::getLigado()
+{
+    return ligado;
+}
+
+void Veiculo::setLigado(int l)
+{
+    if(l == 1)
+    {
+        ligado = true;
+    }
+    else if (l == 0)
+    {
+        ligado = false;
+    }
+        
+}
 
 int Veiculo::getVelMax()
 {
