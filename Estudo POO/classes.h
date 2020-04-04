@@ -68,6 +68,7 @@ Veiculo::Veiculo(int tp)
         nome = "Navio";
         setVelMax(120);
     }
+    setLigado(0);
 }
 
 #endif
