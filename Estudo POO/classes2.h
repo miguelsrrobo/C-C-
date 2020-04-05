@@ -66,7 +66,7 @@ Carro::Carro(){
     vel = 0;
     blind = 0;
     rodas = 4;
-    setTipo(1);
+    setTipo(2);
     setVelMax(180);
     setArma(false);
 }
@@ -83,7 +83,7 @@ Tanque::Tanque(/* args */){
     vel = 0;
     blind = 0;
     rodas = 4;
-    setTipo(1);
+    setTipo(4);
     setVelMax(200);
     setArma(true);
 }
