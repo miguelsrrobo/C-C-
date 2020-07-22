@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>Aula_12/external-content.duckduckgo.com.png</file>
+        <file>Aula_12/Qt.png</file>
+    </qresource>
+</RCC>
