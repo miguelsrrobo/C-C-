@@ -8,16 +8,16 @@ using namespace std;
 class Dict
 {
 private:
+    string elemento;
+    Dict* proximo;
+    Dict* antes;
     vector< string > m_data;
     string m_dictpath;
 
-public:    
-    int num;
-	Dict* prox;
-	Dict* ant;
+public:
     //this function loads a dictionary
     bool LoadDictionary(const string &filename);
-    void insereInicio(const string *LISTA, string* x);
+    void insereInicio(const string *dictionario, string* obg);
 
 
     unsigned int GetSize() const { return m_data.size(); };
@@ -27,6 +27,6 @@ public:
 
     //this function implements a linear search
     //bool linearSearch(const string &query, vector<string> &dict, unsigned int &index, unsigned int &nbopperations);
-    //bool binarySearch(const string &query, vector<string> &dict, //unsigned int &index, unsigned int &nbopperations);    
-    
+    //bool binarySearch(const string &query, vector<string> &dict, //unsigned int &index, unsigned int &nbopperations);
+
 };

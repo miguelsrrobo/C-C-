@@ -5,7 +5,7 @@ bool Dict::LoadDictionary(const string &filename)
     m_dictpath = "";
     m_data.clear();
     cout << "Loading file " << filename << endl;
-    
+
     //ifstream and ofstream
     ifstream file(filename);
     if(!file.is_open())
@@ -13,9 +13,9 @@ bool Dict::LoadDictionary(const string &filename)
         cout << "Error, file not loaded" << endl;
         return false;
     }
-    
+
     m_dictpath = filename;
-    
+
     string tmp;
     while(getline(file, tmp))
     {
@@ -23,27 +23,17 @@ bool Dict::LoadDictionary(const string &filename)
         m_data.push_back(tmp);
     }
     file.close();
-    
+
     m_data.erase(m_data.begin()+0);
-    
+
     return true;
 }
 
-void insereInicio(const string *LISTA, char* x)
+void Dict::insereInicio(string *dictionario, string* obg)
 {
-	char *novo=(char *) malloc(sizeof(LISTA));
-	if(!novo){
-		printf("Sem memoria disponivel!\n");
-		exit(1);
-	}
-	
-	string *oldHead = LISTA->prox;
-	string *oldTail = LISTA->ant;
-	novo->num = x;
-	LISTA->prox = novo;
-	novo->prox = oldHead;
-	novo->ant = oldTail;
-} 
+  ofstream output(dictionario);
+  output.push_back(obg);
+}
 
 /*
 unsigned int Dict::GetSize()
@@ -64,7 +54,7 @@ bool linearSearch(const string &query, vector<string> &dict, unsigned int &index
             index = i;
             return true;
         }
-    }    
+    }
     return false;
 }
 
@@ -77,16 +67,16 @@ bool binarySearch(const string &query, vector<string> &dict, unsigned int &index
         {
             unsigned int middle = (index2-index1) / 2;
             nbopperations++;
-            if(query == dict.at(index1+middle)) 
+            if(query == dict.at(index1+middle))
             {
                 index = index1+middle;
                 return true;
-            }            
+            }
             else
             {
                 //this one is to break when there is no query in our dictionary
                 if(index2==index1) break;
-                
+
                 bool lowerthan = query < dict.at(index1+middle);
                 if(lowerthan)
                 {
@@ -96,9 +86,9 @@ bool binarySearch(const string &query, vector<string> &dict, unsigned int &index
                 {
                     index1 = index1+middle+1;
                 }
-            }               
+            }
         }
-        
+
         return false;
 }
 */
