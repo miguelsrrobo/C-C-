@@ -1,0 +1,5 @@
+ppppp==ppppp
+ppppp==ppppp
+ttt==ttt
+Duplicates:_3
+Filtered_Words:_12

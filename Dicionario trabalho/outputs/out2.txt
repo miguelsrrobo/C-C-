@@ -1,0 +1,12 @@
+ddd==ddd
+fff==fff
+fff==fff
+hhhs==hhhs
+jjj==jjj
+sss==sss
+sss==sss
+ttt==ttt
+yyy==yyy
+yyys==yyys
+Duplicates:_10
+Filtered_Words:_35

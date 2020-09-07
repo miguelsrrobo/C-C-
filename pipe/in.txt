@@ -1,0 +1,5 @@
+dict.txt
+3
+pizza
+love
+dog

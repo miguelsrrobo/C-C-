@@ -1,0 +1,13 @@
+ddd==ddd
+eee==eee
+fff==fff
+hhhs==hhhs
+jjj==jjj
+ppppp==ppppp
+ppppp==ppppp
+sss==sss
+sss==sss
+ttt==ttt
+yyys==yyys
+Duplicates:_11
+Filtered_Words:_24

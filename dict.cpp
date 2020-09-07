@@ -1,7 +1,7 @@
 #include "dict.hpp"
 
 //implementation
-vector<string> LoadDictionary(const char* filename)
+vector<string> LoadDictionary(const char* filename)  //*******
 {
     cout << "Trying to read " << filename << endl;
     
@@ -33,18 +33,6 @@ size_t searchWord(vector<string>& list, string query, bool& success)
         {
             success=true;
             return i;
-        }
-    }
-    return 0;
-}
-
-size_t searchList(vector<string>& list, string query, bool& success)
-{
-    for(size_t i =0;i < list.size();i++)
-    {
-        if(strstr(list.at(i).c_str(),query.c_str()))
-        {
-            cout << list.at(i) << endl;
         }
     }
     return 0;
